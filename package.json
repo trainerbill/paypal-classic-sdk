@@ -1,0 +1,51 @@
+{
+    "author": "Andrew Throener",
+    "name": "paypal-classic-sdk",
+    "description": "NodeJS SDK for PayPal Classic APIs",
+    "version": "0.1.0",
+    "homepage": "https://github.com/trainerbill/paypal-classic-sdk",
+    "keywords": [
+        "paypal",
+        "classic",
+        "nodejs",
+        "sdk"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/trainerbill/paypal-classic-sdk"
+    },
+    "bugs": {
+        "url": "https://github.com/trainerbill/paypal-classic-sdk/issues",
+        "email": "athroener@mystartupsolutions.com"
+    },
+    "licenses": [
+        {
+            "url": "https://github.com/trainerbill/paypal-classic-sdk/blob/master/LICENSE.txt"
+        }
+    ],
+    "engines": {
+        "node": ">= v0.6.0"
+    },
+    "main": "./index.js",
+    "dependencies": {
+        "node-uuid": "*",
+        "underscore":"1.6.0"
+    },
+    "devDependencies": {
+        "chai": "*",
+        "mocha": "*",
+        "grunt": "~0.4.1",
+        "grunt-contrib-jshint": "~0.3.0",
+        "grunt-simple-mocha": "~0.4.0",
+        "mocha-lcov-reporter": "0.0.1",
+        "blanket": "~1.1.5",
+        "coveralls": "~2.0.16"
+    },
+    "scripts": {
+        "blanket": {
+            "pattern": "paypal-classic-sdk.js"
+        },
+        "test": "grunt"
+    },
+    "readmeFilename": "README.md"
+}
