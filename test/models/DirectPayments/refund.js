@@ -26,7 +26,7 @@ describe('RefundModel', function () {
 
             //Check validation parameters
             refund.getValidationParameters().should.be.a('array');
-            refund.getValidationParameters().should.have.length(2);
+            refund.getValidationParameters().should.have.length(0);
 
         });
     });
@@ -61,14 +61,6 @@ describe('RefundModel', function () {
             };
             refund.exchangeData(data);
             expect(refund.validateData).to.not.throw();
-        });
-        it('Should throw', function () {
-            var data = {
-
-                REFUNDTYPE: "Full"
-            };
-            refund.exchangeData(data);
-            expect(refund.validateData).to.throw('TRANSACTIONID: Required parameter for this transaction is undefined');
         });
     });
 });

@@ -7,7 +7,7 @@ var refund = function RefundModel() {
         METHOD: "RefundTransaction"
 
     });
-    transaction.setValidationParameters(['TRANSACTIONID', 'REFUNDTYPE']);
+    //transaction.setValidationParameters(['TRANSACTIONID', 'REFUNDTYPE']);
     return transaction;
 };
 
